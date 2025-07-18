@@ -12,8 +12,6 @@ html{
 body {
     background: #080808;
     color: #fff;
-
-     
 }
 #header{
     width: 100%;
@@ -21,8 +19,11 @@ body {
     background-image: url(images/bg.png);
     background-size: cover;
     background-position: center;
-
-
+    transition: background-size 1.5s ease, background-position 1.5s ease;
+}
+#header:hover {
+    background-size: 105%; /* Zoom-in */
+    background-position: translatex(60px);; 
 }
 .container{
     padding: 10px 10%;
@@ -96,7 +97,7 @@ nav ul li a:hover::after{
 
 }
 .image-with-transition {
-    transition: background 0.5s,transform 0.5s ;
+    transition: background 0.5s, transform 0.5s;
   }
   .image-with-transition:hover {
     transform: translateY(-10px);
