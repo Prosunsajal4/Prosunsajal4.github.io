@@ -22,8 +22,7 @@ body {
     transition: background-size 1.5s ease, background-position 1.5s ease;
 }
 #header:hover {
-    background-size: 105%; /* Zoom-in */
-    background-position: translatex(60px);; 
+    background-size: 115%; /* Zoom-in */
 }
 .container{
     padding: 10px 10%;
@@ -357,7 +356,11 @@ nav ul li a:hover::after{
   @media only screen and (max-width: 600px) {
     #header{
         background-image: url(images/bg.png);
-      
+    }
+
+    #header:hover {
+        background-position: top; 
+        background-size: 250%; /* Zoom-in */
     }
     .header-text{
         margin-top: 100%;
@@ -381,7 +384,6 @@ nav ul li a:hover::after{
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-       
     }
 
     nav ul li{
